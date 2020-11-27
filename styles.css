@@ -27,6 +27,7 @@ body {
   align-items: center;
   background-color: white;
   padding: 10px;
+  font-size: 1.25em;
 }
 #image {
   max-width: 100%;
@@ -38,6 +39,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#tribute-info h3 {
+  margin: 1em auto;
 }
 
 .read-more {
@@ -52,6 +56,12 @@ li {
 }
 blockquote {
   margin: 1em;
+}
+blockquote::before {
+  content: '"';
+}
+blockquote::after {
+  content: '" - Maradona';
 }
 footer {
   text-align: center;
